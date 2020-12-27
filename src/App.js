@@ -20,7 +20,7 @@ function App() {
       const presupuestoRestante = restante - gasto.cantidad;
       setRestante(presupuestoRestante);
     }
-  }, [gasto]);
+  }, [gasto, crearGasto, gastos, restante]);
 
   return (
     <div className="container">
